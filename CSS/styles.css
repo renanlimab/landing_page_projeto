@@ -1,0 +1,472 @@
+ /*Variáveis atrelando sempre ao :root */
+ :root {
+    /*Cores principais */
+    --primary: #eb1ccc;
+    --secundary: #9598a9;
+    /* Outras cores só trabalhando com texto */
+    --text-color: #FFF;
+    --text-secundary: #000;
+    --text-tertiary: #5d5d5d;
+ }
+     /* reset no css, ou seja colocar todas as fontes de "Montserrat" */
+* {
+     /* Vao padronizar todas as fontes para "Montserrat" */
+    font-family: "Montserrat";
+
+    /* Vai tirar todas as margens de todos os elementos */
+    margin: 0;
+
+    /* Vai tirar todo o padding*/
+    padding: 0;
+
+     /* Para não passar da area utel, respeitando a largura máxima do elemento*/
+    box-sizing: border-box;
+ }
+
+ /*Event form*/
+ #event-description {
+
+    /*filtro preto por cima da imagem de fundo */
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), 
+    url("../img/hrz-5.jpg");
+
+    /*Aparecer o máximo o possível na área útel da tela*/
+    background-position: center;
+    background-size: cover;
+
+    /*Fazer com o que a imagem fique até quase o final da tela, fazendo o usuário entender que tem mais conteúdo e rolar para baixo*/
+    height: 85vh;
+
+    display: flex;
+
+    /*Conteudos levemente espaçados*/
+    justify-content: space-around;
+
+    /*Alinhar itens ao centro*/
+    align-items: center;
+
+    color: var(--text-color);
+
+}
+
+/*Configurando cores do Disclaimer*/
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+
+    /*Tudo em caixa alta*/
+    text-transform: uppercase;
+
+    /*Quebrar as linhas das palavras*/
+    max-width: 350px;
+
+    /*Cor em negrito*/
+    font-weight: bold;
+
+    /*Afastar todos os elementos*/
+    margin-bottom: 1em;
+}
+
+/* Todos os paragrafos do disclaimer */
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3em;    
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+}
+
+/* FORMULÁRIO */
+#subscription-form {
+    /* Cor de fundo do formulário */
+    background-color: var(--secundary);
+    
+    padding: 2em;
+
+    /* Largura do formulário */
+    max-width: 22%;
+}
+
+/* PARAGRAFOS DO FORMULÁRIO */
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secundary);
+    margin-bottom: 1em;
+}
+
+/* INPUTS */
+.form-group {
+    display: flex;
+
+    /* Itens do formulário em coluna */
+    flex-direction: column;
+
+    /*Afastando os inputs um do outro*/
+    margin-bottom: 0.8em;
+}
+
+/* LABEL */
+.form-group label {
+    color: var(--text-tertiary);
+
+    /*Afastar a Label um pouco do Input*/
+    margin-bottom: .3em;
+
+    /* Todas elas em negrito */
+    font-weight: bold;
+}
+
+/* Trabalhar nos inputs */
+.form-group input,
+.form-group select {
+    /*Separar o texto das bordas do imput*/
+    padding: 6px 8px;
+    border-radius: 5px;
+
+    /*Tirar as bordas*/
+    border: none;
+}
+
+/* Botões do projeto */
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+
+    /*Aparecer o ponteiro do mouse quando o usuário for clicar*/
+    cursor: pointer;
+
+    /*Fazer com que o botão fique mais claro pra quando o usuário for passar o cursor por cima do botão fique mais escuro*/
+    opacity: 0.8;
+}
+
+/*Fazer com que o botão tanha o efeito de acender*/
+.btn:hover {
+    opacity: 1;
+}
+
+/* Benefits section */
+#key-benefits h2 {
+    background-color: var(--secundary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+/* Trabalhar com os próprios elementos dos benefícios */
+.benefits {
+    /* Cada benefício um do lado do outro */
+    display: flex;
+
+    /* Separa-los igualmente */
+    justify-content: space-around;
+
+    /* afastar eles dos cantos */
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+
+    /* imagem em cima e o texto em baixo */
+    flex-direction: column;
+
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+/* DEFININDO ALGUNS ESTILOS GERAIS PARA A IMAGEM DO BENEFIT  */
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+/* ESTILIZANDO CADA UMA DAS IMAGENS DO BENEFITS  */
+#benefit-1 {
+    background-image: url("../img/sqr-1.jpg");
+}
+
+#benefit-2 {
+    background-image: url("../img/sqr-2.jpg");
+}
+
+#benefit-3 {
+    background-image: url("../img/sqr-3.jpg");
+}
+
+/* Event Location  */
+
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), 
+    url("../img/hrz-1.jpg");
+
+    /*Aparecer o máximo o possível na área útel da tela*/
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#address,
+#about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+ /* Estilização do ícone */
+#address i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+ /* Detalhes do endereço */
+
+ #address-details {
+    text-align: center;
+    font-size: 1.3em;
+ }
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+ /* Event details container */
+ #details {
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+ }
+
+ .detail img {
+    width: 50%;
+ }
+
+ .detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+ }
+
+ #detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+ }
+
+ .detail-description {
+    width: 100%;
+    padding-left: 2em;
+ }
+
+ .detail-description ul {
+    list-style-position: inside;
+ }
+
+ .detail-description ul li {
+    margin-bottom: 0.4em;
+ }
+
+ .detail-description ul li:last-child {
+    font-weight: bold;
+ }
+
+ /* Call to action section */
+ #cta {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), 
+    url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+ }
+
+ #cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2;
+    font-weight: 500;
+ }
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+/* Footer */
+
+#footer {
+    text-align: center;
+    color: var(--secundary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span{
+    font-weight: bold;
+}
+
+/* trabalhando responsividade para mobile */
+
+@media (max-width: 450px) {
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2{
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /*Benefits section */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Event Location */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+    
+    #about-location p  {
+        display: none;
+    }
+    /* Event details container */
+
+    .detail{
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .detail-1 img {
+        display: none;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Call to action section */
+    #cta {
+        text-align: center;
+    }
+
+    #cta .btn {
+        width: 80%;
+    }
+
+
+}
+
+
